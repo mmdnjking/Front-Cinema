@@ -1,16 +1,16 @@
 export default function Header() {
   return (
     <>
-      <header className="pt-10 relative w-full h-screen bg-[url('AFTUOQ8K_2.png')] bg-cover bg-center bg-blend-overlay text-[#FAFAE8] shadow-md">
-        {/* لایه نیمه‌شفاف برای تیره کردن بک‌گراند */}
-        <div className="absolute inset-0 bg-black/20" />
+      <header className="mb-[48px] pt-10 w-full h-screen bg-[url('AFTUOQ8K_2.png')] bg-cover bg-center bg-blend-overlay text-[#FAFAE8] shadow-md">
+
+        <div className="inset-0 bg-black/20" />
 
         {/* نوار بالایی (Navbar) */}
         <div className="relative z-20 bg-black max-w-7xl mx-auto px-20 py-4 flex items-center justify-between rounded-xl">
           {/* لوگو و منو */}
-          <div className="flex items-center gap-10">
+          <div className="flex items-center gap-10 hover:cursor-pointer">
             <div className="text-2xl font-bold tracking-wide flex items-center gap-2.5">
-              <img className="w-9 h-5" src="./public/Layer_2.png" alt="hicon" />
+              <img className="" src="./public/Layer_2.png" alt="hicon" />
               Ticketor
             </div>
 
@@ -29,13 +29,13 @@ export default function Header() {
             <button className="text-white hover:text-yellow-400 transition">
               <img src="./public/searchico.png" alt="search" />
             </button>
-            <button className="text-yellow-500 px-4 py-1 rounded-md text-sm font-semibold flex items-center gap-2 hover:text-yellow-400 transition">
-              <img src="./public/signupico.png" alt="signup" />
-              Sign up
-            </button>
-            <button className="text-yellow-500 px-4 py-1 rounded-md text-sm font-semibold flex items-center gap-2 hover:text-yellow-400 transition">
+            <button className="text-gray-200 px-4 py-1 rounded-md text-sm font-semibold flex items-center gap-2 hover:text-gray-400 transition">
               <img src="./public/loginico.png" alt="login" />
               Login
+            </button>
+            <button className="text-yellow-300 px-4 py-1 rounded-md text-sm font-semibold flex items-center gap-2 hover:text-yellow-500 transition">
+              <img src="./public/signupico.png" alt="signup" />
+              Sign up
             </button>
           </div>
         </div>
@@ -77,19 +77,8 @@ export default function Header() {
             <p className="text-sm">Happy Customers</p>
           </div>
         </div>
+        <div className="absolute bottom-[-48px] bg-[#0E0E11] w-full h-12 flex items-center justify-center bg-[radial-gradient(35.69%_311.63%_at_47.22%_72.37%,rgba(179,213,229,0.3)_0%,rgba(179,213,229,0)_100%)]">Special Offer: Buy 2 tickets, get 1 FREE! Valid this weekend only.<a>Learn More</a></div>
       </header>
-      <div className="absolute w-full bg-[#1a1a1a] text-white text-center py-4 ">
-        <p className="text-sm md:text-base">
-          <span className="font-semibold">Special Offer:</span> Buy 2 Tickets,
-          Get 1 FREE! Valid This Weekend Only.{" "}
-          <a
-            href="#"
-            className="text-yellow-400 hover:text-yellow-300 transition-colors duration-200 underline ml-1"
-          >
-            Learn More
-          </a>
-        </p>
-      </div>
     </>
   );
 }
